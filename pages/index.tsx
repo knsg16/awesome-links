@@ -3,16 +3,16 @@ import Head from 'next/head'
 import { gql, useQuery } from '@apollo/client'
 
 const AllLinksQuery = gql`
-    query {
-        links {
-            id
-            title
-            url
-            description
-            imageUrl
-            category
-        }
+  query {
+    links {
+      id
+      title
+      url
+      description
+      imageUrl
+      category
     }
+  }
 `
 
 export default function Home() {
