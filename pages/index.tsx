@@ -28,6 +28,7 @@ export default function Home() {
   const { data, error, loading, fetchMore } = useQuery(AllLinksQuery, {
     variables: { first: 2 },
   });
+  console.log(error);
 
   if (loading) return <p>Loading......</p>;
 
